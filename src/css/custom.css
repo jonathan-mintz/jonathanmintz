@@ -38,4 +38,32 @@ body {
   .navbar__items {
     font-size: 0.95rem;
   }
+
+  .navbar__items--right {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .navbar__items--right .navbar__item {
+    display: none;
+  }
+
+  .navbar__items--right .navbar__item.dropdown {
+    display: block;
+  }
+
+  .footer__links {
+    display: grid;
+    gap: 1.5rem;
+  }
+
+  .footer__col {
+    margin-bottom: 0.5rem;
+  }
+
+  .footer__title,
+  .footer__link-item {
+    color: #e6efe9;
+  }
 }

@@ -37,7 +37,7 @@ export default function EventPage() {
                 <div className={styles.heroImageFrame}>
                   <img
                     className={styles.heroImage}
-                    src="/img/yonatan-mintz-event.avif"
+                    src="/img/yonatan-mintz-event.jpg"
                     alt="יונתן מינץ"
                     loading="lazy"
                   />

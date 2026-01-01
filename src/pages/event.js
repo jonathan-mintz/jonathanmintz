@@ -1,7 +1,5 @@
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
-import DocusaurusJonathMinthsImageUrl from '@site/static/img/jonathanmintz.jpg';
-
 import styles from './event.module.css';
 
 export default function EventPage() {
@@ -40,7 +38,7 @@ export default function EventPage() {
                 <div className={styles.heroImageFrame}>
                   <img
                     className={styles.heroImage}
-                    src={DocusaurusJonathMinthsImageUrl}
+                    src="/img/yonatan-mintz-event.jpg"
                     alt="Yonatan Mintz"
                     loading="lazy"
                   />

@@ -81,7 +81,7 @@ export default function Home() {
               <div className={styles.portraitFrame}>
                 <img
                   className={styles.portrait}
-                  src="/img/jonathan-mintz.jpg.avif"
+                  src="/img/jonathanmintz.jpg"
                   alt="ג'ונתן מינץ"
                   loading="lazy"
                 />

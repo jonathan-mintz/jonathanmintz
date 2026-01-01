@@ -33,16 +33,26 @@ export default function EventPage() {
                   </a>
                 </div>
               </div>
-              <div className={styles.heroCard}>
-                <p className={styles.cardKicker}>מי אני</p>
-                <Heading as="h2" className={styles.cardTitle}>
-                  יונתן מינץ
-                </Heading>
-                <p className={styles.cardSubtitle}>מנחה תהליכי שינוי הרגלים ומאמן</p>
-                <p className={styles.cardBody}>
-                  משלב ידע מעשי מעולמות התזונה, תנועה גופנית, תהליכים רגשיים ואינטגרציה
-                  גוף-נפש.
-                </p>
+              <div className={styles.heroAside}>
+                <div className={styles.heroImageFrame}>
+                  <img
+                    className={styles.heroImage}
+                    src="/img/yonatan-mintz-event.avif"
+                    alt="יונתן מינץ"
+                    loading="lazy"
+                  />
+                </div>
+                <div className={styles.heroCard}>
+                  <p className={styles.cardKicker}>מי אני</p>
+                  <Heading as="h2" className={styles.cardTitle}>
+                    יונתן מינץ
+                  </Heading>
+                  <p className={styles.cardSubtitle}>מנחה תהליכי שינוי הרגלים ומאמן</p>
+                  <p className={styles.cardBody}>
+                    משלב ידע מעשי מעולמות התזונה, תנועה גופנית, תהליכים רגשיים ואינטגרציה
+                    גוף-נפש.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

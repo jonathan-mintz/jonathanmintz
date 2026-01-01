@@ -55,6 +55,27 @@
   max-width: 520px;
 }
 
+.heroAside {
+  display: grid;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+.heroImageFrame {
+  border-radius: 28px;
+  overflow: hidden;
+  box-shadow: 0 26px 70px rgba(31, 27, 22, 0.2);
+  border: 1px solid rgba(47, 93, 80, 0.2);
+  background: #f6efe6;
+  max-width: 360px;
+}
+
+.heroImage {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
 .eyebrow {
   text-transform: uppercase;
   letter-spacing: 0.2em;

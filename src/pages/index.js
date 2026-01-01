@@ -2,6 +2,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
+import DocusaurusJonathMinthsImageUrl from '@site/static/img/jonathanmintz.jpg';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
@@ -46,9 +47,8 @@ export default function Home() {
               <div className={styles.portraitFrame}>
                 <img
                   className={styles.portrait}
-                  src="/img/jonathan-mintz.jpg.avif"
+                  src={DocusaurusJonathMinthsImageUrl}
                   alt="Jonathan Mintz"
-                  loading="lazy"
                 />
               </div>
             </div>

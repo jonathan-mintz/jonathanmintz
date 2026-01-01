@@ -2,7 +2,7 @@
 title: "The Biohacking Compass: Earth, Sun, Forest, Water"
 authors: [jonathan]
 tags: [biohacking, longevity, water]
-image: /img/jonathan-mintz.jpg.avif
+image: /img/jonathan-mintz.jpg
 description: A simple framework to guide daily decisions for long, healthy living.
 ---
 

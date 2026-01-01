@@ -1,5 +1,6 @@
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
+import DocusaurusJonathMinthsImageUrl from '@site/static/img/jonathanmintz.jpg';
 
 import styles from './event.module.css';
 
@@ -35,16 +36,26 @@ export default function EventPage() {
                   </a>
                 </div>
               </div>
-              <div className={styles.heroCard}>
-                <p className={styles.cardKicker}>Who am I</p>
-                <Heading as="h2" className={styles.cardTitle}>
-                  Yonatan Mintz
-                </Heading>
-                <p className={styles.cardSubtitle}>Habit-change facilitator and coach</p>
-                <p className={styles.cardBody}>
-                  Combines practical knowledge from the worlds of nutrition,
-                  body movement, emotional processes, and mind-body integration.
-                </p>
+              <div className={styles.heroAside}>
+                <div className={styles.heroImageFrame}>
+                  <img
+                    className={styles.heroImage}
+                    src={DocusaurusJonathMinthsImageUrl}
+                    alt="Yonatan Mintz"
+                    loading="lazy"
+                  />
+                </div>
+                <div className={styles.heroCard}>
+                  <p className={styles.cardKicker}>Who am I</p>
+                  <Heading as="h2" className={styles.cardTitle}>
+                    Yonatan Mintz
+                  </Heading>
+                  <p className={styles.cardSubtitle}>Habit-change facilitator and coach</p>
+                  <p className={styles.cardBody}>
+                    Combines practical knowledge from the worlds of nutrition,
+                    body movement, emotional processes, and mind-body integration.
+                  </p>
+                </div>
               </div>
             </div>
           </div>

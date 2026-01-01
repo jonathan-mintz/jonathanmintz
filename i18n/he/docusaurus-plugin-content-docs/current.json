@@ -1,0 +1,54 @@
+{
+  "version.label": {
+    "message": "נוכחי",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.Foundations": {
+    "message": "היסודות",
+    "description": "The label for category 'Foundations' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Foundations.link.generated-index.description": {
+    "message": "איך ג'ונתן ניגש לביוהאקינג עם בטיחות, בהירות ותוצאות לטווח ארוך.",
+    "description": "The generated-index page description for category 'Foundations' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Fasting": {
+    "message": "צום",
+    "description": "The label for category 'Fasting' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Fasting.link.generated-index.description": {
+    "message": "פרוטוקולים ועקרונות לצום בטוח ואפקטיבי.",
+    "description": "The generated-index page description for category 'Fasting' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Movement & Sport": {
+    "message": "תנועה וספורט",
+    "description": "The label for category 'Movement & Sport' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Movement & Sport.link.generated-index.description": {
+    "message": "כוח, בסיס אירובי, ניידות ומוכנות לספורט.",
+    "description": "The generated-index page description for category 'Movement & Sport' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Sleep & Recovery": {
+    "message": "שינה והתאוששות",
+    "description": "The label for category 'Sleep & Recovery' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Sleep & Recovery.link.generated-index.description": {
+    "message": "אור, עומק שינה, טקסי התאוששות ואיפוס מתחים.",
+    "description": "The generated-index page description for category 'Sleep & Recovery' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Nutrition": {
+    "message": "תזונה",
+    "description": "The label for category 'Nutrition' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Nutrition.link.generated-index.description": {
+    "message": "איכות דלק, תזמון ותוספים מתוך כוונה.",
+    "description": "The generated-index page description for category 'Nutrition' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Documents": {
+    "message": "מסמכים",
+    "description": "The label for category 'Documents' in sidebar 'tutorialSidebar'"
+  },
+  "sidebar.tutorialSidebar.category.Documents.link.generated-index.description": {
+    "message": "מסמכי התחלה, רשימות בדיקה ותבניות.",
+    "description": "The generated-index page description for category 'Documents' in sidebar 'tutorialSidebar'"
+  }
+}

@@ -1,0 +1,186 @@
+.hero {
+  position: relative;
+  overflow: hidden;
+  padding: 6rem 0 4.5rem;
+  background: radial-gradient(circle at 15% 20%, rgba(255, 233, 188, 0.7), transparent 55%),
+    linear-gradient(135deg, #f4efe4 0%, #e1ece4 45%, #d2e6ea 100%);
+}
+
+.heroBackdrop {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle at 75% 15%, rgba(255, 212, 117, 0.4), transparent 40%),
+    radial-gradient(circle at 20% 80%, rgba(146, 190, 166, 0.4), transparent 45%);
+  opacity: 0.9;
+  pointer-events: none;
+}
+
+.heroInner {
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.1fr) minmax(0, 0.9fr);
+  gap: 3rem;
+  align-items: center;
+}
+
+.heroCopy {
+  z-index: 1;
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.24em;
+  font-size: 0.78rem;
+  font-weight: 600;
+  color: #5a6f61;
+  margin-bottom: 1rem;
+}
+
+.heroTitle {
+  font-size: clamp(2.8rem, 4vw, 4.2rem);
+  margin-bottom: 1.5rem;
+  color: #152218;
+}
+
+.heroSubtitle {
+  font-size: 1.15rem;
+  line-height: 1.7;
+  color: #2f3f35;
+  margin-bottom: 2rem;
+  max-width: 32rem;
+}
+
+.heroActions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-bottom: 1.5rem;
+}
+
+.heroMeta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  font-size: 0.9rem;
+  color: #4d5f55;
+}
+
+.heroMeta span {
+  padding: 0.35rem 0.85rem;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.7);
+  border: 1px solid rgba(19, 32, 25, 0.1);
+}
+
+.heroMedia {
+  display: flex;
+  justify-content: center;
+}
+
+.portraitFrame {
+  position: relative;
+  padding: 1.5rem;
+  border-radius: 999px;
+  background: linear-gradient(160deg, rgba(255, 240, 202, 0.9), rgba(191, 222, 211, 0.9));
+  box-shadow: 0 24px 60px rgba(24, 38, 28, 0.18);
+}
+
+.portrait {
+  width: min(320px, 80vw);
+  height: min(320px, 80vw);
+  object-fit: cover;
+  border-radius: 50%;
+  border: 6px solid rgba(255, 255, 255, 0.9);
+}
+
+.section {
+  padding: 4rem 0;
+}
+
+.sectionAlt {
+  padding: 4rem 0;
+  background: linear-gradient(120deg, rgba(255, 245, 226, 0.65), rgba(225, 238, 230, 0.7));
+}
+
+.sectionHeader {
+  max-width: 640px;
+  margin-bottom: 2.5rem;
+}
+
+.sectionKicker {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #6a7b6a;
+  margin-bottom: 0.75rem;
+}
+
+.sectionTitle {
+  font-size: clamp(2rem, 3vw, 2.6rem);
+  color: #16231a;
+  margin-bottom: 1rem;
+}
+
+.sectionIntro {
+  font-size: 1.05rem;
+  line-height: 1.7;
+  color: #37483f;
+}
+
+.sectionActions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 1.5rem;
+}
+
+.focusGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+
+.focusCard {
+  padding: 1.75rem;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.85);
+  border: 1px solid rgba(19, 32, 25, 0.08);
+  box-shadow: 0 16px 36px rgba(18, 30, 22, 0.08);
+}
+
+.focusCard h3 {
+  margin-bottom: 0.75rem;
+  color: #1a2a20;
+}
+
+.focusCard p {
+  margin: 0;
+  color: #3a4a40;
+  line-height: 1.6;
+}
+
+@media screen and (max-width: 996px) {
+  .hero {
+    padding: 4.5rem 0 3.5rem;
+  }
+
+  .heroInner {
+    grid-template-columns: 1fr;
+  }
+
+  .heroMedia {
+    order: -1;
+  }
+}
+
+@media screen and (max-width: 640px) {
+  .heroTitle {
+    font-size: 2.4rem;
+  }
+
+  .portrait {
+    width: min(260px, 80vw);
+    height: min(260px, 80vw);
+  }
+}

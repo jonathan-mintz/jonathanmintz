@@ -1,0 +1,287 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=Manrope:wght@400;500;600&display=swap');
+
+.page {
+  --cream: #f6f1e8;
+  --sand: #e8dccb;
+  --clay: #c98c5a;
+  --ink: #1f1b16;
+  --forest: #2f5d50;
+  --sky: #c9d8d0;
+  background: radial-gradient(circle at 10% 10%, #fffaf2 0%, var(--cream) 50%, #efe5d5 100%);
+  color: var(--ink);
+  font-family: 'Manrope', 'Helvetica Neue', Arial, sans-serif;
+  position: relative;
+  overflow: hidden;
+}
+
+.page::before {
+  content: '';
+  position: absolute;
+  width: 520px;
+  height: 520px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(201, 216, 208, 0.7), rgba(201, 216, 208, 0));
+  top: -200px;
+  right: -120px;
+  pointer-events: none;
+}
+
+.page::after {
+  content: '';
+  position: absolute;
+  width: 420px;
+  height: 420px;
+  border-radius: 40%;
+  background: radial-gradient(circle, rgba(201, 140, 90, 0.4), rgba(201, 140, 90, 0));
+  bottom: -200px;
+  left: -120px;
+  pointer-events: none;
+}
+
+.hero {
+  padding: clamp(3.5rem, 8vw, 6.5rem) 0 3rem;
+  position: relative;
+  z-index: 1;
+}
+
+.heroInner {
+  display: grid;
+  gap: clamp(2rem, 5vw, 4rem);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  align-items: center;
+}
+
+.heroCopy {
+  max-width: 520px;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.75rem;
+  color: var(--forest);
+  margin-bottom: 1rem;
+  font-weight: 600;
+}
+
+.title {
+  font-family: 'Fraunces', 'Georgia', serif;
+  font-size: clamp(2.5rem, 5vw, 4.2rem);
+  line-height: 1.05;
+  margin-bottom: 1.5rem;
+}
+
+.subtitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.lede {
+  font-size: 1rem;
+  line-height: 1.7;
+  color: #3a332b;
+}
+
+.heroActions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 2rem;
+}
+
+.primaryButton,
+.secondaryButton {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.85rem 1.6rem;
+  border-radius: 999px;
+  font-weight: 600;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.primaryButton {
+  background: var(--forest);
+  color: #fdfbf6;
+  box-shadow: 0 18px 40px rgba(47, 93, 80, 0.25);
+}
+
+.primaryButton:hover,
+.secondaryButton:hover {
+  transform: translateY(-2px);
+}
+
+.secondaryButton {
+  border: 1px solid var(--forest);
+  color: var(--forest);
+  background: transparent;
+}
+
+.heroCard {
+  background: #fffaf3;
+  border-radius: 28px;
+  padding: clamp(2rem, 4vw, 2.8rem);
+  box-shadow: 0 24px 60px rgba(31, 27, 22, 0.12);
+  border: 1px solid rgba(201, 140, 90, 0.3);
+}
+
+.cardKicker {
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  font-size: 0.7rem;
+  color: var(--clay);
+  margin-bottom: 0.75rem;
+  font-weight: 600;
+}
+
+.cardTitle {
+  font-family: 'Fraunces', 'Georgia', serif;
+  margin-bottom: 0.5rem;
+}
+
+.cardSubtitle {
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.cardBody {
+  color: #3f362d;
+  line-height: 1.7;
+}
+
+.section,
+.sectionAlt,
+.sectionContact {
+  padding: clamp(3rem, 6vw, 5.5rem) 0;
+  position: relative;
+  z-index: 1;
+}
+
+.sectionAlt {
+  background: rgba(232, 220, 203, 0.4);
+}
+
+.sectionHeader {
+  max-width: 680px;
+  margin-bottom: 2rem;
+}
+
+.sectionKicker {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.7rem;
+  color: var(--forest);
+  font-weight: 600;
+  margin-bottom: 0.75rem;
+}
+
+.sectionTitle {
+  font-family: 'Fraunces', 'Georgia', serif;
+  margin-bottom: 0;
+}
+
+.listGrid,
+.checkList {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  font-weight: 500;
+}
+
+.listGrid li,
+.checkList li {
+  background: #fffaf3;
+  padding: 1rem 1.25rem 1rem 2.5rem;
+  border-radius: 16px;
+  position: relative;
+  box-shadow: 0 16px 30px rgba(31, 27, 22, 0.08);
+}
+
+.listGrid li::before,
+.checkList li::before {
+  content: '+';
+  position: absolute;
+  left: 1rem;
+  top: 1rem;
+  width: 1.1rem;
+  height: 1.1rem;
+  border-radius: 50%;
+  background: var(--clay);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.sectionNote {
+  margin-top: 1.5rem;
+  max-width: 620px;
+  color: #3f362d;
+  line-height: 1.7;
+}
+
+.sectionContact {
+  padding-bottom: clamp(4rem, 8vw, 6.5rem);
+}
+
+.contactCard {
+  background: var(--forest);
+  color: #fdfbf6;
+  border-radius: 28px;
+  padding: clamp(2rem, 4vw, 3rem);
+  display: grid;
+  gap: 1.5rem;
+  align-items: center;
+  justify-content: space-between;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  box-shadow: 0 30px 70px rgba(47, 93, 80, 0.35);
+}
+
+.contactTitle {
+  font-family: 'Fraunces', 'Georgia', serif;
+  color: #fdfbf6;
+  margin-bottom: 0.5rem;
+}
+
+.contactSubtitle {
+  color: #e9efe9;
+  margin: 0;
+}
+
+.contactDetails {
+  display: grid;
+  gap: 0.75rem;
+  justify-items: start;
+}
+
+.contactLink {
+  color: #fdfbf6;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.1rem;
+  border-bottom: 1px solid rgba(253, 251, 246, 0.4);
+  padding-bottom: 0.2rem;
+}
+
+.contactLink:hover {
+  border-color: #fdfbf6;
+}
+
+@media (max-width: 768px) {
+  .heroActions {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .listGrid li,
+  .checkList li {
+    box-shadow: 0 10px 20px rgba(31, 27, 22, 0.06);
+  }
+}

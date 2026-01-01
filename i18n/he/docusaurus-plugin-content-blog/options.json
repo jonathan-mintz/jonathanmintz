@@ -1,0 +1,14 @@
+{
+  "title": {
+    "message": "בלוג",
+    "description": "The title for the blog used in SEO"
+  },
+  "description": {
+    "message": "בלוג",
+    "description": "The description for the blog used in SEO"
+  },
+  "sidebar.title": {
+    "message": "רשומות אחרונות",
+    "description": "The label for the left sidebar"
+  }
+}

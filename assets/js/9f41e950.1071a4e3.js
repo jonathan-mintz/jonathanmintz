@@ -1,1 +1,0 @@
-"use strict";(globalThis.webpackChunkjonathanmintz=globalThis.webpackChunkjonathanmintz||[]).push([[8970],{3016(a){a.exports=JSON.parse('{"authors":[{"name":"Jonathan Mintz","title":"Biohacking Coach","url":"/","imageURL":"/jonathanmintz/img/jonathan-mintz.jpg.avif","key":"jonathan","page":null,"count":4}]}')}}]);

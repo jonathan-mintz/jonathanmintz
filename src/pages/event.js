@@ -1,14 +1,31 @@
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from './event.module.css';
 
 export default function EventPage() {
+  const videoUrl = useBaseUrl('/video/nature.mp4');
+  const posterUrl = useBaseUrl('/img/lecture.png');
+
   return (
     <Layout
       title="Authentic Change Starts Inside"
       description="Health, energy, and a lifestyle adapted to the pace of modern life.">
       <div className={styles.page}>
         <header className={styles.hero}>
+          <div className={styles.heroMediaBackdrop} aria-hidden="true">
+            <video
+              className={styles.heroVideo}
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="metadata"
+              poster={posterUrl}>
+              <source src={videoUrl} type="video/mp4" />
+            </video>
+          </div>
+          <div className={styles.heroOverlay} aria-hidden="true" />
           <div className="container">
             <div className={styles.heroInner}>
               <div className={styles.heroCopy}>
@@ -35,18 +52,10 @@ export default function EventPage() {
                 </div>
               </div>
               <div className={styles.heroAside}>
-                <div className={styles.heroImageFrame}>
-                  <img
-                    className={styles.heroImage}
-                    src="/img/yonatan-mintz-event.jpg"
-                    alt="Yonatan Mintz"
-                    loading="lazy"
-                  />
-                </div>
                 <div className={styles.heroCard}>
                   <p className={styles.cardKicker}>Who am I</p>
                   <Heading as="h2" className={styles.cardTitle}>
-                    Yonatan Mintz
+                    Jonathan Mintz
                   </Heading>
                   <p className={styles.cardSubtitle}>Habit-change facilitator and coach</p>
                   <p className={styles.cardBody}>
@@ -119,7 +128,7 @@ export default function EventPage() {
               <div className={styles.contactCard}>
                 <div>
                   <Heading as="h2" className={styles.contactTitle}>
-                    Connect with Yonatan
+                    Connect with Jonathan
                   </Heading>
                   <p className={styles.contactSubtitle}>
                     Ready to bring the lecture to your community or organization?

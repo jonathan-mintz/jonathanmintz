@@ -3,37 +3,21 @@
     "message": "גלו",
     "description": "The title of the footer links column with title=Explore in the footer"
   },
-  "link.title.Documents": {
-    "message": "מסמכים",
-    "description": "The title of the footer links column with title=Documents in the footer"
-  },
   "link.title.Journal": {
     "message": "יומן",
     "description": "The title of the footer links column with title=Journal in the footer"
   },
-  "link.item.label.Foundations": {
-    "message": "היסודות",
-    "description": "The label of footer link with label=Foundations linking to /docs/approach/vision"
-  },
-  "link.item.label.Fasting": {
-    "message": "צום",
-    "description": "The label of footer link with label=Fasting linking to /docs/fasting/fasting-foundations"
-  },
-  "link.item.label.Movement & Sport": {
-    "message": "תנועה וספורט",
-    "description": "The label of footer link with label=Movement & Sport linking to /docs/movement/strength"
+  "link.item.label.About": {
+    "message": "על יונתן",
+    "description": "The label of footer link with label=About linking to /about"
   },
   "link.item.label.Event": {
     "message": "הרצאה",
     "description": "The label of footer link with label=Event linking to /event"
   },
-  "link.item.label.Starter Documents": {
-    "message": "מסמכי פתיחה",
-    "description": "The label of footer link with label=Starter Documents linking to /docs/resources/documents"
-  },
-  "link.item.label.Daily Checklists": {
-    "message": "רשימות בדיקה יומיות",
-    "description": "The label of footer link with label=Daily Checklists linking to /docs/resources/checklists"
+  "link.item.label.Daily Routine": {
+    "message": "שגרה יומית",
+    "description": "The label of footer link with label=Daily Routine linking to /daily-routine"
   },
   "link.item.label.Blog": {
     "message": "בלוג",

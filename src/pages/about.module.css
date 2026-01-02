@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600;700&family=Manrope:wght@400;500;600&display=swap');
+
+.page {
+  --sand: #f1e6d6;
+  --forest: #23473c;
+  --ink: #1e1c18;
+  background: radial-gradient(circle at 20% 10%, #fffaf1 0%, #f4ede2 40%, #e7efe9 100%);
+  color: var(--ink);
+  font-family: 'Manrope', 'Helvetica Neue', Arial, sans-serif;
+  padding: clamp(3.5rem, 8vw, 6rem) 0 clamp(4rem, 8vw, 6.5rem);
+}
+
+.hero {
+  display: grid;
+  gap: clamp(2rem, 5vw, 3.5rem);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  align-items: center;
+}
+
+.portraitWrap {
+  position: relative;
+  max-width: 420px;
+}
+
+.portraitFrame {
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 30px 70px rgba(20, 35, 28, 0.2);
+  border: 1px solid rgba(35, 71, 60, 0.2);
+  background: #f9f3ea;
+  aspect-ratio: 1 / 1;
+}
+
+.portrait {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+}
+
+.badge {
+  position: absolute;
+  bottom: 1.2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background: var(--forest);
+  color: #fefbf4;
+  padding: 0.65rem 1.2rem;
+  border-radius: 999px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  box-shadow: 0 16px 30px rgba(35, 71, 60, 0.25);
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  font-size: 0.75rem;
+  color: var(--forest);
+  font-weight: 600;
+}
+
+.title {
+  font-family: 'Fraunces', 'Times New Roman', serif;
+  font-size: clamp(2.4rem, 5vw, 3.8rem);
+  margin: 0.5rem 0 1.2rem;
+}
+
+.lede {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #2f2a24;
+}
+
+.section {
+  margin-top: clamp(3rem, 7vw, 5rem);
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 1.6rem;
+  border: 1px solid rgba(35, 71, 60, 0.12);
+  box-shadow: 0 20px 50px rgba(18, 32, 25, 0.08);
+}
+
+.cardTitle {
+  font-family: 'Fraunces', 'Times New Roman', serif;
+  margin-bottom: 0.6rem;
+}
+
+.cardText {
+  color: #3a332b;
+  line-height: 1.7;
+}
+
+.cta {
+  margin-top: clamp(2.5rem, 6vw, 4rem);
+  background: #1f3f34;
+  color: #f9f6ef;
+  border-radius: 24px;
+  padding: clamp(1.8rem, 4vw, 2.8rem);
+  display: grid;
+  gap: 1rem;
+  align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  box-shadow: 0 30px 70px rgba(15, 30, 24, 0.3);
+}
+
+.ctaTitle {
+  font-family: 'Fraunces', 'Times New Roman', serif;
+  margin-bottom: 0.5rem;
+}
+
+.ctaLinks {
+  display: grid;
+  gap: 0.6rem;
+  justify-items: start;
+}
+
+.ctaLink {
+  color: #f9f6ef;
+  text-decoration: none;
+  font-weight: 600;
+  border-bottom: 1px solid rgba(249, 246, 239, 0.45);
+  padding-bottom: 0.2rem;
+}

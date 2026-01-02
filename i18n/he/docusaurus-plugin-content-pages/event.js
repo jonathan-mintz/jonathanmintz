@@ -1,15 +1,31 @@
 import Layout from '@theme/Layout';
 import Heading from '@theme/Heading';
-
+import useBaseUrl from '@docusaurus/useBaseUrl';
 import styles from '@site/src/pages/event.module.css';
 
 export default function EventPage() {
+  const videoUrl = useBaseUrl('/video/nature.mp4');
+  const posterUrl = useBaseUrl('/img/lecture.png');
+
   return (
     <Layout
       title="שינוי אמיתי מתחיל מבפנים"
       description="בריאות, אנרגיה ואורח חיים מותאם לקצב החיים המודרני.">
       <div className={styles.page}>
         <header className={styles.hero}>
+          <div className={styles.heroMediaBackdrop} aria-hidden="true">
+            <video
+              className={styles.heroVideo}
+              autoPlay
+              loop
+              muted
+              playsInline
+              preload="metadata"
+              poster={posterUrl}>
+              <source src={videoUrl} type="video/mp4" />
+            </video>
+          </div>
+          <div className={styles.heroOverlay} aria-hidden="true" />
           <div className="container">
             <div className={styles.heroInner}>
               <div className={styles.heroCopy}>
@@ -34,14 +50,6 @@ export default function EventPage() {
                 </div>
               </div>
               <div className={styles.heroAside}>
-                <div className={styles.heroImageFrame}>
-                  <img
-                    className={styles.heroImage}
-                    src="/img/yonatan-mintz-event.jpg"
-                    alt="יונתן מינץ"
-                    loading="lazy"
-                  />
-                </div>
                 <div className={styles.heroCard}>
                   <p className={styles.cardKicker}>מי אני</p>
                   <Heading as="h2" className={styles.cardTitle}>

@@ -39,18 +39,14 @@ body {
     font-size: 0.95rem;
   }
 
-  .navbar__items--right {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  .navbar-sidebar {
+    height: 100vh;
   }
 
-  .navbar__items--right .navbar__item {
-    display: none;
-  }
-
-  .navbar__items--right .navbar__item.dropdown {
-    display: block;
+  .navbar-sidebar__items {
+    max-height: calc(100vh - var(--ifm-navbar-height));
+    overflow-y: auto;
+    padding-bottom: 1.5rem;
   }
 
   .footer__links {

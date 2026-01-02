@@ -6,6 +6,7 @@ description: Small light habits that deepen sleep and improve recovery.
 ---
 
 Your sleep system is light-driven. When light is right, hormones follow.
+<!-- truncate -->
 
 ## Morning
 - 5–10 minutes of outdoor light within an hour of waking.

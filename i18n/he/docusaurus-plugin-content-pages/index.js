@@ -2,6 +2,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import clsx from 'clsx';
+import jonathanImageUrl from '@site/static/img/jonathanmintz.png';
 
 import Heading from '@theme/Heading';
 import styles from '@site/src/pages/index.module.css';
@@ -62,8 +63,8 @@ export default function Home() {
                 מחובר לאדמה וטבעי.
               </p>
               <div className={styles.heroActions}>
-                <Link className="button button--primary button--lg" to="/docs/intro">
-                  התחילו עם היסודות
+                <Link className="button button--primary button--lg" to="/about">
+                  על יונתן
                 </Link>
                 <Link className="button button--outline button--lg" to="/blog">
                   קראו את היומן
@@ -81,7 +82,7 @@ export default function Home() {
               <div className={styles.portraitFrame}>
                 <img
                   className={styles.portrait}
-                  src="/img/jonathanmintz.jpg"
+                  src={jonathanImageUrl}
                   alt="ג'ונתן מינץ"
                   loading="lazy"
                 />
@@ -153,24 +154,19 @@ export default function Home() {
         <section className={styles.section}>
           <div className="container">
             <div className={styles.sectionHeader}>
-              <p className={styles.sectionKicker}>מסמכים</p>
+              <p className={styles.sectionKicker}>קצב יומי</p>
               <Heading as="h2" className={styles.sectionTitle}>
-                כלים התחלתיים שאפשר להשתמש בהם היום
+                שגרה שבועית שאפשר להתחיל בה היום
               </Heading>
               <p className={styles.sectionIntro}>
-                עברו לספריית המסמכים כדי למצוא רשימות בדיקה, תבניות תכנון
-                וקצב שבועי שאפשר ליישם מיד.
+                קבלו שגרה מלאה עם אימונים, צום והתאוששות שמסודרים לפי ימות השבוע.
               </p>
               <div className={styles.sectionActions}>
-                <Link
-                  className="button button--secondary button--lg"
-                  to="/docs/resources/documents">
-                  למסמכים
+                <Link className="button button--secondary button--lg" to="/daily-routine">
+                  שגרה יומית
                 </Link>
-                <Link
-                  className="button button--outline button--lg"
-                  to="/docs/resources/checklists">
-                  לפתיחת רשימות בדיקה
+                <Link className="button button--outline button--lg" to="/event">
+                  לפרטי ההרצאה
                 </Link>
               </div>
             </div>

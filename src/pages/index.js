@@ -2,7 +2,7 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 import HomepageFeatures from '@site/src/components/HomepageFeatures';
-import DocusaurusJonathMinthsImageUrl from '@site/static/img/jonathanmintz.jpg';
+import DocusaurusJonathMinthsImageUrl from '@site/static/img/jonathanmintz.png';
 
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
@@ -28,8 +28,8 @@ export default function Home() {
                 a lifestyle that feels grounded and natural.
               </p>
               <div className={styles.heroActions}>
-                <Link className="button button--primary button--lg" to="/docs/intro">
-                  Start with the Foundations
+                <Link className="button button--primary button--lg" to="/about">
+                  About Jonathan
                 </Link>
                 <Link className="button button--outline button--lg" to="/blog">
                   Read the Journal
@@ -115,24 +115,20 @@ export default function Home() {
         <section className={styles.section}>
           <div className="container">
             <div className={styles.sectionHeader}>
-              <p className={styles.sectionKicker}>Documents</p>
+              <p className={styles.sectionKicker}>Daily Rhythm</p>
               <Heading as="h2" className={styles.sectionTitle}>
-                Starter tools you can use today
+                A weekly routine you can use today
               </Heading>
               <p className={styles.sectionIntro}>
-                Visit the Documents library for checklists, planning templates,
-                and a weekly rhythm you can follow immediately.
+                Explore the full daily routine with training, fasting, and recovery
+                blocks mapped across the week.
               </p>
               <div className={styles.sectionActions}>
-                <Link
-                  className="button button--secondary button--lg"
-                  to="/docs/resources/documents">
-                  View Documents
+                <Link className="button button--secondary button--lg" to="/daily-routine">
+                  Daily Routine
                 </Link>
-                <Link
-                  className="button button--outline button--lg"
-                  to="/docs/resources/checklists">
-                  Open Checklists
+                <Link className="button button--outline button--lg" to="/event">
+                  View the Lecture
                 </Link>
               </div>
             </div>

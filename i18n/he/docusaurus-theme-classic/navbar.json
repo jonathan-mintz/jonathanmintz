@@ -3,13 +3,13 @@
     "message": "יונתן מינץ",
     "description": "The title in the navbar"
   },
-  "item.label.Guides": {
-    "message": "מדריכים",
-    "description": "Navbar item with label Guides"
+  "item.label.About": {
+    "message": "על יונתן",
+    "description": "Navbar item with label About"
   },
-  "item.label.Documents": {
-    "message": "מסמכים",
-    "description": "Navbar item with label Documents"
+  "item.label.Daily Routine": {
+    "message": "שגרה יומית",
+    "description": "Navbar item with label Daily Routine"
   },
   "item.label.Blog": {
     "message": "בלוג",

@@ -6,6 +6,7 @@ description: Build a body that lasts by pairing strength with easy aerobic work.
 ---
 
 Longevity training is not extreme training. It is repeatable, joint-friendly, and still powerful.
+<!-- truncate -->
 
 ## Two anchors
 1. **Strength:** 2–3 full-body sessions per week.

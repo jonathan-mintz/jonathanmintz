@@ -37,7 +37,7 @@ const config = {
   // useful metadata like html lang. For example, if your site is Chinese, you
   // may want to replace "en" with "zh-Hans".
   i18n: {
-    defaultLocale: 'en',
+    defaultLocale: 'he',
     locales: ['en', 'he'],
     localeConfigs: {
       en: {
@@ -55,9 +55,7 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        docs: {
-          sidebarPath: './sidebars.js',
-        },
+        docs: false,
         blog: {
           showReadingTime: true,
           feedOptions: {
@@ -88,13 +86,8 @@ const config = {
       navbar: {
         title: 'Jonathan Mintz',
         items: [
-          {
-            type: 'docSidebar',
-            sidebarId: 'tutorialSidebar',
-            position: 'left',
-            label: 'Guides',
-          },
-          {to: '/docs/resources/documents', label: 'Documents', position: 'left'},
+          {to: '/about', label: 'About', position: 'left'},
+          {to: '/daily-routine', label: 'Daily Routine', position: 'left'},
           {to: '/event', label: 'Event', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
           {type: 'localeDropdown', position: 'right'},
@@ -107,33 +100,16 @@ const config = {
             title: 'Explore',
             items: [
               {
-                label: 'Foundations',
-                to: '/docs/approach/vision',
-              },
-              {
-                label: 'Fasting',
-                to: '/docs/fasting/fasting-foundations',
-              },
-              {
-                label: 'Movement & Sport',
-                to: '/docs/movement/strength',
+                label: 'About',
+                to: '/about',
               },
               {
                 label: 'Event',
                 to: '/event',
               },
-            ],
-          },
-          {
-            title: 'Documents',
-            items: [
               {
-                label: 'Starter Documents',
-                to: '/docs/resources/documents',
-              },
-              {
-                label: 'Daily Checklists',
-                to: '/docs/resources/checklists',
+                label: 'Daily Routine',
+                to: '/daily-routine',
               },
             ],
           },

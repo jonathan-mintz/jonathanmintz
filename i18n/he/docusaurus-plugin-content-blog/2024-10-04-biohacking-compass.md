@@ -2,7 +2,7 @@
 title: "מצפן הביוהאקינג: אדמה, שמש, יער, מים"
 authors: [jonathan]
 tags: [biohacking, longevity, water]
-image: /img/jonathanmintz.jpg
+image: /img/jonathanmintz.png
 description: מסגרת פשוטה שמכוונת החלטות יומיות לחיים ארוכים ובריאים.
 ---
 

@@ -6,6 +6,7 @@ description: A weekly template that balances metabolic flexibility with performa
 ---
 
 Fasting is a tool, not a religion. The goal is flexibility: the ability to burn fat, use glucose, and recover well.
+<!-- truncate -->
 
 ### A simple weekly rhythm
 - **Mon–Thu:** 14–16 hour overnight fasts, protein-forward first meal.

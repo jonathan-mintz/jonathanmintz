@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:wght@500;600&family=Source+Sans+3:wght@400;600&display=swap');
+
+.page {
+  background: linear-gradient(180deg, #fdf9f2 0%, #f3efe6 45%, #eef4f2 100%);
+  color: #1d2b22;
+  padding: clamp(3rem, 6vw, 5rem) 0 clamp(4rem, 8vw, 6rem);
+}
+
+.hero {
+  display: grid;
+  gap: 1.5rem;
+  max-width: 720px;
+  margin-bottom: 2.5rem;
+}
+
+.kicker {
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  font-size: 0.7rem;
+  color: #2f6f57;
+  font-weight: 600;
+}
+
+.title {
+  font-family: 'Fraunces', 'Times New Roman', serif;
+  font-size: clamp(2.2rem, 4.8vw, 3.5rem);
+}
+
+.subtitle {
+  font-size: 1.1rem;
+  color: #3a4b41;
+  line-height: 1.7;
+}
+
+.grid {
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 1.5rem;
+  box-shadow: 0 18px 40px rgba(15, 30, 25, 0.08);
+  border: 1px solid rgba(47, 111, 87, 0.12);
+}
+
+.cardTitle {
+  font-family: 'Fraunces', 'Times New Roman', serif;
+  font-size: 1.2rem;
+  margin-bottom: 0.75rem;
+}
+
+.list {
+  margin: 0;
+  padding-left: 1.2rem;
+  color: #2a372f;
+  line-height: 1.7;
+}
+
+.notes {
+  margin-top: 2.5rem;
+  background: #183126;
+  color: #f5fbf6;
+  border-radius: 24px;
+  padding: 2rem;
+  box-shadow: 0 26px 60px rgba(8, 25, 18, 0.25);
+}
+
+.notesTitle {
+  font-family: 'Fraunces', 'Times New Roman', serif;
+  margin-bottom: 1rem;
+}
+
+.notesList {
+  margin: 0;
+  padding-left: 1.2rem;
+  line-height: 1.7;
+}

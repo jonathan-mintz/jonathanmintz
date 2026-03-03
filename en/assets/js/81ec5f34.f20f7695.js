@@ -1,0 +1,1 @@
+"use strict";(globalThis.webpackChunkjonathanmintz=globalThis.webpackChunkjonathanmintz||[]).push([[882],{6341(n){n.exports=JSON.parse('{"authors":[{"name":"Jonathan Mintz","title":"Nature inspired longevity coach ( bio hacking )","url":"/","imageURL":"/en/img/jonathanmintz.png","key":"jonathan","page":null,"count":5}]}')}}]);

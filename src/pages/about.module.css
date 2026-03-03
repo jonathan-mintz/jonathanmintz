@@ -66,6 +66,25 @@
   margin: 0.5rem 0 1.2rem;
 }
 
+.quickLinks {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.65rem;
+  margin-bottom: 1rem;
+}
+
+.quickLink {
+  display: inline-flex;
+  align-items: center;
+  border-radius: 999px;
+  border: 1px solid rgba(35, 71, 60, 0.24);
+  background: rgba(255, 255, 255, 0.75);
+  color: var(--forest);
+  font-weight: 600;
+  text-decoration: none;
+  padding: 0.4rem 0.8rem;
+}
+
 .lede {
   font-size: 1.1rem;
   line-height: 1.8;

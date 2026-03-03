@@ -8,6 +8,9 @@ import Heading from '@theme/Heading';
 import styles from '@site/src/pages/index.module.css';
 import featureStyles from '@site/src/components/HomepageFeatures/styles.module.css';
 
+const whatsappUrl = 'https://wa.me/972507225001';
+const emailUrl = 'mailto:jonathanmintz3@gmail.com';
+
 const FeatureList = [
   {
     title: 'אדמה: יסודות',
@@ -47,13 +50,13 @@ export default function Home() {
   return (
     <Layout
       title="יונתן מינץ"
-      description="ביוהאקינג, צום, תנועה והתאוששות לחיים ארוכים ובריאים.">
+      description="אריכות ימים בהשראת הטבע ( ביו האקינג ). צום, תנועה והתאוששות לחיים ארוכים ובריאים.">
       <header className={styles.hero}>
         <div className={styles.heroBackdrop} />
         <div className="container">
           <div className={styles.heroInner}>
             <div className={styles.heroCopy}>
-              <p className={styles.kicker}>ביוהאקינג ואריכות ימים</p>
+              <p className={styles.kicker}>אריכות ימים בהשראת הטבע</p>
               <Heading as="h1" className={styles.heroTitle}>
                 יונתן מינץ
               </Heading>
@@ -63,10 +66,22 @@ export default function Home() {
                 מחובר לאדמה וטבעי.
               </p>
               <div className={styles.heroActions}>
-                <Link className="button button--primary button--lg" to="/about">
+                <a
+                  className={styles.ctaPrimary}
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  צ'אט בוואטסאפ
+                </a>
+                <a className={styles.ctaSecondary} href={emailUrl}>
+                  שלחו אימייל
+                </a>
+              </div>
+              <div className={styles.heroQuickLinks}>
+                <Link className={styles.heroQuickLink} to="/about">
                   על יונתן
                 </Link>
-                <Link className="button button--outline button--lg" to="/blog">
+                <Link className={styles.heroQuickLink} to="/blog">
                   קראו את היומן
                 </Link>
               </div>
@@ -97,7 +112,7 @@ export default function Home() {
             <div className={styles.sectionHeader}>
               <p className={styles.sectionKicker}>היסודות</p>
               <Heading as="h2" className={styles.sectionTitle}>
-                ביוהאקינג בהשראת הטבע
+                אריכות ימים בהשראת הטבע ( ביו האקינג )
               </Heading>
               <p className={styles.sectionIntro}>
                 העבודה משקפת אדמה, שמש, יער ומים. היסודות האלה שומרים שכל

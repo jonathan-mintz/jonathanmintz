@@ -38,7 +38,7 @@
 
 .heroTitle {
   font-size: clamp(2.8rem, 4vw, 4.2rem);
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
   color: #152218;
 }
 
@@ -46,29 +46,78 @@
   font-size: 1.15rem;
   line-height: 1.7;
   color: #2f3f35;
-  margin-bottom: 2rem;
+  margin-bottom: 1.3rem;
   max-width: 32rem;
 }
 
 .heroActions {
   display: flex;
+  gap: 0.8rem;
+  flex-wrap: wrap;
+  margin-bottom: 1rem;
+}
+
+.ctaPrimary,
+.ctaSecondary {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 2.9rem;
+  padding: 0.65rem 1.15rem;
+  border-radius: 999px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+}
+
+.ctaPrimary {
+  color: #f8fcf9;
+  border: 1px solid transparent;
+  background: linear-gradient(130deg, #2b6d55 0%, #215944 100%);
+  box-shadow: 0 12px 28px rgba(30, 62, 49, 0.24);
+}
+
+.ctaSecondary {
+  color: #1e3328;
+  border: 1px solid rgba(20, 37, 29, 0.2);
+  background: rgba(255, 255, 255, 0.86);
+}
+
+.ctaPrimary:hover,
+.ctaSecondary:hover {
+  transform: translateY(-1px);
+}
+
+.heroQuickLinks {
+  display: flex;
   gap: 1rem;
   flex-wrap: wrap;
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.25rem;
+}
+
+.heroQuickLink {
+  font-size: 0.94rem;
+  font-weight: 600;
+  color: #2e4c3f;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(46, 76, 63, 0.35);
+  padding-bottom: 0.1rem;
 }
 
 .heroMeta {
   display: flex;
   flex-wrap: wrap;
-  gap: 0.75rem;
-  font-size: 0.9rem;
+  gap: 0.6rem;
+  max-width: 33rem;
+  font-size: 0.84rem;
   color: #4d5f55;
 }
 
 .heroMeta span {
-  padding: 0.35rem 0.85rem;
+  padding: 0.32rem 0.72rem;
   border-radius: 999px;
-  background: rgba(255, 255, 255, 0.7);
+  background: rgba(255, 255, 255, 0.62);
   border: 1px solid rgba(19, 32, 25, 0.1);
 }
 
@@ -177,6 +226,16 @@
 @media screen and (max-width: 640px) {
   .heroTitle {
     font-size: 2.4rem;
+  }
+
+  .heroActions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .ctaPrimary,
+  .ctaSecondary {
+    width: 100%;
   }
 
   .portrait {

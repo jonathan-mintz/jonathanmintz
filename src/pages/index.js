@@ -7,18 +7,21 @@ import DocusaurusJonathMinthsImageUrl from '@site/static/img/jonathanmintz.png';
 import Heading from '@theme/Heading';
 import styles from './index.module.css';
 
+const whatsappUrl = 'https://wa.me/972507225001';
+const emailUrl = 'mailto:jonathanmintz3@gmail.com';
+
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
       title="Jonathan Mintz"
-      description="Biohacking, fasting, movement, and recovery for long, healthy living.">
+      description="Nature inspired longevity ( bio hacking ). Fasting, movement, and recovery for long, healthy living.">
       <header className={styles.hero}>
         <div className={styles.heroBackdrop} />
         <div className="container">
           <div className={styles.heroInner}>
             <div className={styles.heroCopy}>
-              <p className={styles.kicker}>Biohacking & Longevity</p>
+              <p className={styles.kicker}>Nature Inspired Longevity</p>
               <Heading as="h1" className={styles.heroTitle}>
                 {siteConfig.title}
               </Heading>
@@ -28,10 +31,22 @@ export default function Home() {
                 a lifestyle that feels grounded and natural.
               </p>
               <div className={styles.heroActions}>
-                <Link className="button button--primary button--lg" to="/about">
+                <a
+                  className={styles.ctaPrimary}
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  Chat on WhatsApp
+                </a>
+                <a className={styles.ctaSecondary} href={emailUrl}>
+                  Send Email
+                </a>
+              </div>
+              <div className={styles.heroQuickLinks}>
+                <Link className={styles.heroQuickLink} to="/about">
                   About Jonathan
                 </Link>
-                <Link className="button button--outline button--lg" to="/blog">
+                <Link className={styles.heroQuickLink} to="/blog">
                   Read the Journal
                 </Link>
               </div>
@@ -61,7 +76,7 @@ export default function Home() {
             <div className={styles.sectionHeader}>
               <p className={styles.sectionKicker}>The Elements</p>
               <Heading as="h2" className={styles.sectionTitle}>
-                Nature-inspired biohacking
+                Nature inspired longevity ( bio hacking )
               </Heading>
               <p className={styles.sectionIntro}>
                 The work mirrors earth, sun, forest, and water. These elements

@@ -1,12 +1,12 @@
 ---
-title: "The Biohacking Compass: Earth, Sun, Forest, Water"
+title: "The Nature Inspired Longevity Compass ( bio hacking ): Earth, Sun, Forest, Water"
 authors: [jonathan]
 tags: [biohacking, longevity, water]
 image: /img/jonathanmintz.png
 description: A simple framework to guide daily decisions for long, healthy living.
 ---
 
-Biohacking works best when it is grounded. I use a simple compass that mirrors nature: earth, sun, forest, and water. Each element points to a daily practice that keeps health simple and sustainable.
+Nature inspired longevity ( bio hacking ) works best when it is grounded. I use a simple compass that mirrors nature: earth, sun, forest, and water. Each element points to a daily practice that keeps health simple and sustainable.
 <!-- truncate -->
 
 ## Earth: foundations

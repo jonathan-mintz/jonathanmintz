@@ -18,5 +18,13 @@
   "item.label.Event": {
     "message": "הרצאה",
     "description": "Navbar item with label Event"
+  },
+  "item.label.WhatsApp": {
+    "message": "וואטסאפ",
+    "description": "Navbar item with label WhatsApp"
+  },
+  "item.label.Email": {
+    "message": "אימייל",
+    "description": "Navbar item with label Email"
   }
 }

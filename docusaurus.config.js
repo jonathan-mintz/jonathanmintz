@@ -11,7 +11,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Jonathan Mintz',
-  tagline: 'Biohacking for long, healthy living.',
+  tagline: 'Nature inspired longevity ( bio hacking )',
   favicon: 'img/favicon.ico',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -67,6 +67,9 @@ const config = {
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
         },
+        gtag: {
+          trackingID: 'G-D3507VZ97D',
+        },
         theme: {
           customCss: './src/css/custom.css',
         },
@@ -78,6 +81,12 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       image: 'img/jonathan-mintz.jpg.avif',
+      metadata: [
+        {
+          name: 'google-site-verification',
+          content: 'wol6xRVosvJmqEQwZ9EGNDREukYjBt-S21OdQE3CJBE',
+        },
+      ],
       colorMode: {
         defaultMode: 'light',
         disableSwitch: true,
@@ -90,6 +99,16 @@ const config = {
           {to: '/daily-routine', label: 'Daily Routine', position: 'left'},
           {to: '/event', label: 'Event', position: 'left'},
           {to: '/blog', label: 'Blog', position: 'left'},
+          {
+            href: 'https://wa.me/972507225001',
+            label: 'WhatsApp',
+            position: 'right',
+          },
+          {
+            href: 'mailto:jonathanmintz3@gmail.com',
+            label: 'Email',
+            position: 'right',
+          },
           {type: 'localeDropdown', position: 'right'},
         ],
       },
@@ -119,6 +138,23 @@ const config = {
               {
                 label: 'Blog',
                 to: '/blog',
+              },
+            ],
+          },
+          {
+            title: 'Contact',
+            items: [
+              {
+                label: 'WhatsApp',
+                href: 'https://wa.me/972507225001',
+              },
+              {
+                label: 'Email',
+                href: 'mailto:jonathanmintz3@gmail.com',
+              },
+              {
+                label: 'TikTok',
+                href: 'https://www.tiktok.com/@jonathan.mintz3?_r=1&_t=ZS-94ICmFTeZFg',
               },
             ],
           },

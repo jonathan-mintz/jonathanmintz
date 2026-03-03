@@ -4,6 +4,10 @@ import aboutImageUrl from '@site/static/img/jonathanmintz.png';
 
 import styles from './about.module.css';
 
+const whatsappUrl = 'https://wa.me/972507225001';
+const emailUrl = 'mailto:jonathanmintz3@gmail.com';
+const tiktokUrl = 'https://www.tiktok.com/@jonathan.mintz3?_r=1&_t=ZS-94ICmFTeZFg';
+
 const highlights = [
   {
     title: 'What Jonathan Does',
@@ -43,6 +47,25 @@ export default function AboutPage() {
               <Heading as="h1" className={styles.title}>
                 Jonathan Mintz
               </Heading>
+              <div className={styles.quickLinks}>
+                <a
+                  className={styles.quickLink}
+                  href={whatsappUrl}
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  WhatsApp 050-722-5001
+                </a>
+                <a className={styles.quickLink} href={emailUrl}>
+                  Email
+                </a>
+                <a
+                  className={styles.quickLink}
+                  href={tiktokUrl}
+                  target="_blank"
+                  rel="noopener noreferrer">
+                  TikTok
+                </a>
+              </div>
               <p className={styles.lede}>
                 Jonathan combines practical knowledge from nutrition, body movement,
                 emotional processes, and mind-body integration. His work helps people
@@ -71,11 +94,25 @@ export default function AboutPage() {
               <p>Bring a lecture, workshop, or coaching session to your community.</p>
             </div>
             <div className={styles.ctaLinks}>
+              <a
+                className={styles.ctaLink}
+                href={whatsappUrl}
+                target="_blank"
+                rel="noopener noreferrer">
+                WhatsApp 050-722-5001
+              </a>
               <a className={styles.ctaLink} href="tel:0507225001">
                 050-722-5001
               </a>
-              <a className={styles.ctaLink} href="mailto:jonathanmintz3@gmail.com">
+              <a className={styles.ctaLink} href={emailUrl}>
                 jonathanmintz3@gmail.com
+              </a>
+              <a
+                className={styles.ctaLink}
+                href={tiktokUrl}
+                target="_blank"
+                rel="noopener noreferrer">
+                TikTok
               </a>
             </div>
           </section>

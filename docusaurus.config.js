@@ -12,7 +12,7 @@ import {themes as prismThemes} from 'prism-react-renderer';
 const config = {
   title: 'Jonathan Mintz',
   tagline: 'Nature inspired longevity ( bio hacking )',
-  favicon: 'img/favicon.ico',
+  favicon: 'assets/images/jonathanmintz-c2f00f4485b0f25eadb7037d5bb58862.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
   future: {
@@ -24,6 +24,7 @@ const config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
+  scripts: [{src: '/js/consent-manager.js', defer: true}],
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -66,9 +67,6 @@ const config = {
           onInlineTags: 'warn',
           onInlineAuthors: 'warn',
           onUntruncatedBlogPosts: 'warn',
-        },
-        gtag: {
-          trackingID: 'G-D3507VZ97D',
         },
         theme: {
           customCss: './src/css/custom.css',
@@ -155,6 +153,23 @@ const config = {
               {
                 label: 'TikTok',
                 href: 'https://www.tiktok.com/@jonathan.mintz3?_r=1&_t=ZS-94ICmFTeZFg',
+              },
+            ],
+          },
+          {
+            title: 'Legal',
+            items: [
+              {
+                label: 'Privacy Policy',
+                to: '/privacy',
+              },
+              {
+                label: 'Cookie Policy',
+                to: '/cookies',
+              },
+              {
+                label: 'Cookie Settings',
+                to: '/cookies#cookie-settings',
               },
             ],
           },

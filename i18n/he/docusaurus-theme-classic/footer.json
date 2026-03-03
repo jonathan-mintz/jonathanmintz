@@ -11,6 +11,10 @@
     "message": "יצירת קשר",
     "description": "The title of the footer links column with title=Contact in the footer"
   },
+  "link.title.Legal": {
+    "message": "משפטי",
+    "description": "The title of the footer links column with title=Legal in the footer"
+  },
   "link.item.label.About": {
     "message": "על יונתן",
     "description": "The label of footer link with label=About linking to /about"
@@ -38,6 +42,18 @@
   "link.item.label.TikTok": {
     "message": "טיקטוק",
     "description": "The label of footer link with label=TikTok linking to TikTok"
+  },
+  "link.item.label.Privacy Policy": {
+    "message": "מדיניות פרטיות",
+    "description": "The label of footer link with label=Privacy Policy linking to /privacy"
+  },
+  "link.item.label.Cookie Policy": {
+    "message": "מדיניות עוגיות",
+    "description": "The label of footer link with label=Cookie Policy linking to /cookies"
+  },
+  "link.item.label.Cookie Settings": {
+    "message": "הגדרות עוגיות",
+    "description": "The label of footer link with label=Cookie Settings linking to cookie preferences"
   },
   "copyright": {
     "message": "Copyright © 2026 יונתן מינץ.",

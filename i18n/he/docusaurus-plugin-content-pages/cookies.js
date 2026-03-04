@@ -25,11 +25,11 @@ export default function CookiePolicyPage() {
               <ul className={styles.list}>
                 <li>
                   עוגיות הכרחיות: נדרשות לתפקוד בסיסי ואבטחה. עוגיות אלה לא
-                  ניתנות לכיבוי דרך ממשק ההסכמה.
+                  ניתנות לכיבוי דרך האתר.
                 </li>
                 <li>
                   עוגיות אנליטיקה: משמשות לניתוח תנועה ושיפור תכנים. הן
-                  אופציונליות ונטענות רק לאחר הסכמה.
+                  עשויות לכלול מזהים של Google Analytics כמו `_ga` ו- `_ga_*`.
                 </li>
               </ul>
             </section>
@@ -37,28 +37,9 @@ export default function CookiePolicyPage() {
             <section className={styles.section}>
               <Heading as="h2">ספק האנליטיקה</Heading>
               <p>
-                אם ניתנה הסכמה לאנליטיקה, האתר טוען Google Analytics
-                (תג מדידה). שירות זה עשוי להשתמש במזהים כמו `_ga` ו-
-                `_ga_*` לצורך דוחות שימוש מצרפיים.
+                האתר משתמש ב-Google Analytics (תג מדידה) לצורך מדידת דפוסי
+                שימוש והפקת דוחות מצרפיים.
               </p>
-            </section>
-
-            <section className={styles.section}>
-              <Heading as="h2" id="cookie-settings">
-                ניהול העדפות עוגיות
-              </Heading>
-              <p>
-                ניתן לבחור `אשר הכל`, `הכרחיות בלבד`, או לפתוח את חלון ההעדפות
-                בכל עת.
-              </p>
-              <div className={styles.buttonRow}>
-                <button
-                  type="button"
-                  className={styles.preferencesButton}
-                  data-jm-open-cookie-settings="true">
-                  פתחו הגדרות עוגיות
-                </button>
-              </div>
             </section>
 
             <section className={styles.section}>

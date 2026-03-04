@@ -7,11 +7,12 @@
 import {themes as prismThemes} from 'prism-react-renderer';
 
 // This runs in Node.js - Don't use client-side code here (browser APIs, JSX...)
+const GOOGLE_TAG_ID = 'G-D3507VZ97D';
 
 /** @type {import('@docusaurus/types').Config} */
 const config = {
   title: 'Jonathan Mintz',
-  tagline: 'Nature inspired longevity ( bio hacking )',
+  tagline: 'Nature inspired longevity ( biohacking )',
   favicon: 'assets/images/jonathanmintz-c2f00f4485b0f25eadb7037d5bb58862.png',
 
   // Future flags, see https://docusaurus.io/docs/api/docusaurus-config#future
@@ -24,7 +25,25 @@ const config = {
   // Set the /<baseUrl>/ pathname under which your site is served
   // For GitHub pages deployment, it is often '/<projectName>/'
   baseUrl: '/',
-  scripts: [{src: '/js/consent-manager.js', defer: true}],
+  headTags: [
+    {
+      tagName: 'script',
+      attributes: {
+        async: 'true',
+        src: `https://www.googletagmanager.com/gtag/js?id=${GOOGLE_TAG_ID}`,
+      },
+    },
+    {
+      tagName: 'script',
+      attributes: {},
+      innerHTML: `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', '${GOOGLE_TAG_ID}');
+      `,
+    },
+  ],
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.
@@ -166,10 +185,6 @@ const config = {
               {
                 label: 'Cookie Policy',
                 to: '/cookies',
-              },
-              {
-                label: 'Cookie Settings',
-                to: '/cookies#cookie-settings',
               },
             ],
           },

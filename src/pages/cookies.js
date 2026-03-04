@@ -29,7 +29,8 @@ export default function CookiePolicyPage() {
                 </li>
                 <li>
                   Analytics cookies: used to understand traffic and improve content.
-                  These are optional and loaded only after consent.
+                  These may include Google Analytics identifiers such as `_ga`
+                  and `_ga_*`.
                 </li>
               </ul>
             </section>
@@ -37,28 +38,9 @@ export default function CookiePolicyPage() {
             <section className={styles.section}>
               <Heading as="h2">Analytics Provider</Heading>
               <p>
-                If you allow analytics cookies, this site loads Google Analytics
-                (measurement tag). Google may set identifiers such as `_ga` and
-                `_ga_*` to measure usage patterns and aggregate reports.
+                This site uses Google Analytics (measurement tag) to measure
+                usage patterns and aggregate reports.
               </p>
-            </section>
-
-            <section className={styles.section}>
-              <Heading as="h2" id="cookie-settings">
-                How to Manage Cookies
-              </Heading>
-              <p>
-                You can choose `Accept all`, `Necessary only`, or set preferences in
-                the cookie settings panel.
-              </p>
-              <div className={styles.buttonRow}>
-                <button
-                  type="button"
-                  className={styles.preferencesButton}
-                  data-jm-open-cookie-settings="true">
-                  Open Cookie Preferences
-                </button>
-              </div>
             </section>
 
             <section className={styles.section}>

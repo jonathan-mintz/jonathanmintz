@@ -37,6 +37,14 @@ const config = {
       tagName: 'script',
       attributes: {},
       innerHTML: `
+        (function() {
+          try {
+            var preferences = JSON.parse(localStorage.getItem('jm_cookie_preferences_v2'));
+            if (preferences && preferences.analytics === false) {
+              window['ga-disable-${GOOGLE_TAG_ID}'] = true;
+            }
+          } catch (_error) {}
+        })();
         window.dataLayer = window.dataLayer || [];
         function gtag(){dataLayer.push(arguments);}
         gtag('js', new Date());
@@ -44,6 +52,7 @@ const config = {
       `,
     },
   ],
+  scripts: [{src: '/js/consent-manager.js', defer: true}],
 
   // GitHub pages deployment config.
   // If you aren't using GitHub pages, you don't need these.

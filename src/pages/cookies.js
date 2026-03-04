@@ -44,6 +44,17 @@ export default function CookiePolicyPage() {
             </section>
 
             <section className={styles.section}>
+              <Heading as="h2" id="cookie-settings">
+                How to Opt Out
+              </Heading>
+              <p>
+                Analytics cookies are enabled by default. You can opt out at any
+                time from the `Cookie settings` pill shown in the corner of every
+                page.
+              </p>
+            </section>
+
+            <section className={styles.section}>
               <Heading as="h2">Browser Controls</Heading>
               <p>
                 Most browsers allow blocking or deleting cookies. Blocking necessary

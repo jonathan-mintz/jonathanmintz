@@ -50,7 +50,7 @@ export default function Home() {
   return (
     <Layout
       title="יונתן מינץ"
-      description="אריכות ימים בהשראת הטבע ( ביוהאקינג ). צום, תנועה והתאוששות לחיים ארוכים ובריאים.">
+      description="אריכות ימים בהשראת הטבע ( ביו־האקינג ). צום, תנועה והתאוששות לחיים ארוכים ובריאים.">
       <header className={styles.hero}>
         <div className={styles.heroBackdrop} />
         <div className="container">
@@ -112,7 +112,7 @@ export default function Home() {
             <div className={styles.sectionHeader}>
               <p className={styles.sectionKicker}>היסודות</p>
               <Heading as="h2" className={styles.sectionTitle}>
-                אריכות ימים בהשראת הטבע ( ביוהאקינג )
+                אריכות ימים בהשראת הטבע ( ביו־האקינג )
               </Heading>
               <p className={styles.sectionIntro}>
                 העבודה משקפת אדמה, שמש, יער ומים. היסודות האלה שומרים שכל

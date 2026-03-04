@@ -43,6 +43,16 @@ export default function CookiePolicyPage() {
             </section>
 
             <section className={styles.section}>
+              <Heading as="h2" id="cookie-settings">
+                איך לבטל אנליטיקה
+              </Heading>
+              <p>
+                עוגיות אנליטיקה פעילות כברירת מחדל. אפשר לכבות אותן בכל רגע
+                דרך גלולת `הגדרות עוגיות` שמופיעה בפינת כל עמוד.
+              </p>
+            </section>
+
+            <section className={styles.section}>
               <Heading as="h2">ניהול דרך הדפדפן</Heading>
               <p>
                 ברוב הדפדפנים ניתן לחסום או למחוק עוגיות. חסימה של עוגיות

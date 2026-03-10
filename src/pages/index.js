@@ -15,7 +15,7 @@ export default function Home() {
   return (
     <Layout
       title="Jonathan Mintz"
-      description="Nature inspired longevity ( biohacking ). Fasting, movement, and recovery for long, healthy living.">
+      description="Nature inspired longevity (biohacking). Fasting, movement, and recovery for long, healthy living.">
       <header className={styles.hero}>
         <div className={styles.heroBackdrop} />
         <div className="container">
@@ -76,7 +76,7 @@ export default function Home() {
             <div className={styles.sectionHeader}>
               <p className={styles.sectionKicker}>The Elements</p>
               <Heading as="h2" className={styles.sectionTitle}>
-                Nature inspired longevity ( biohacking )
+                Nature inspired longevity (biohacking)
               </Heading>
               <p className={styles.sectionIntro}>
                 The work mirrors earth, sun, forest, and water. These elements
